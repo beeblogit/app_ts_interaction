@@ -14,6 +14,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+generator erd {
+  provider = "prisma-erd-generator"
+  output   = "../docs/full-service-erd.svg"
+}
+
 model Comment {
   id String @id @default(cuid())
 
