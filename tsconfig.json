@@ -17,6 +17,12 @@
         "experimentalDecorators": true,
         "moduleResolution": "node"
     },
-    "include": ["src", "http-kit", "src2/response", "src2/meta"],
-    "exclude": ["node_modules", "db", "coverage"]
+    "exclude": [
+        "dist",
+        "prisma",
+        "docs",
+        "prettierrc.js",
+        "jest.config.js",
+        "node_modules"
+      ]
 }

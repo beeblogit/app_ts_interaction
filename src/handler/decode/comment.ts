@@ -1,5 +1,4 @@
-import { BadRequestResp } from 'ts-responses';
-import { Request, castRequest } from 'ts-serverless';
+import { BadRequestResp, Request, castRequest } from 'ts-responses';
 import { fromZodError } from 'zod-validation-error';
 import { ReqGetAll, ReqStore } from '../interfaces/comment';
 import { GetAll, Store } from '../schemas/comment';

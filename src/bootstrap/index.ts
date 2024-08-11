@@ -5,7 +5,7 @@ import { NODE_ENV, SENTRY_DSN, SENTRY_ENABLED } from '../config';
 const { combine, timestamp, printf } = format;
 
 const winstonFormat = printf(({ level, message, timestamp }) => {
-  return `${timestamp} [${level}]: ${message}`; // LOG FORMAT
+  return `${timestamp} [${level}]: ${message}`;
 });
 
 export const initSentry = () => {
